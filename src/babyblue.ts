@@ -1,0 +1,1 @@
+export const BABY_BLUE = '7a03c3d6a3e2973d111560dcda488e334f6913e2';

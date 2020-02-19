@@ -1,25 +1,63 @@
 {
-	"name": "sftc-tool",
-	"displayName": "sftc-tool",
-	"description": "NBSL",
+	"name": "nbsl-tool",
+	"displayName": "NBSL-Tools",
+	"description": "顺丰同城科技前端开发工具",
 	"version": "0.0.1",
+	"publisher": "zhangweijie",
+	"author": "Zhang Weijie",
+	"icon": "images/logo.png",
+	"main": "./out/index.js",
 	"engines": {
 		"vscode": "^1.42.0"
 	},
 	"categories": [
+		"Snippets",
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"*"
 	],
-	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"category": "NBSL",
+				"command": "nbslTools.selectTools",
+				"title": "选择功能"
+			},
+			{
+				"category": "NBSL",
+				"command": "nbslTools.selectStartModules",
+				"title": "选择要启动的模块"
+			},
+			{
+				"category": "NBSL",
+				"command": "nbslTools.selectProxy",
+				"title": "选择虚拟机"
+			},
+			{
+				"category": "NBSL",
+				"command": "nbslTools.customProxy",
+				"title": "自定义虚拟机"
 			}
-		]
+		],
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./src/snippets.json"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "NBSL",
+			"properties": {
+				"NBSL-Tools.modules": {
+					"type": "string",
+					"default": "all",
+					"markdownDescription": "默认启动模块(*请不要手动编辑此设置*)",
+					"scope": "application"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
@@ -34,12 +72,16 @@
 		"@types/mocha": "^7.0.1",
 		"@types/node": "^12.11.7",
 		"@types/vscode": "^1.42.0",
-		"eslint": "^6.8.0",
-		"@typescript-eslint/parser": "^2.18.0",
 		"@typescript-eslint/eslint-plugin": "^2.18.0",
+		"@typescript-eslint/parser": "^2.18.0",
+		"eslint": "^6.8.0",
 		"glob": "^7.1.6",
 		"mocha": "^7.0.1",
 		"typescript": "^3.7.5",
 		"vscode-test": "^1.3.0"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"rss-parser": "^3.7.5"
 	}
 }

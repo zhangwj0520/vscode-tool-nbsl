@@ -369,6 +369,11 @@ emoji-regex@^8.0.0:
   resolved "https://registry.npm.taobao.org/emoji-regex/download/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
   integrity sha1-6Bj9ac5cz8tARZT4QpY79TFkzDc=
 
+entities@^1.1.1:
+  version "1.1.2"
+  resolved "https://registry.npm.taobao.org/entities/download/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
+  integrity sha1-vfpzUplmTfr9NFKe1PhSKidf6lY=
+
 es-abstract@^1.17.0-next.1:
   version "1.17.4"
   resolved "https://registry.npm.taobao.org/es-abstract/download/es-abstract-1.17.4.tgz?cache=0&sync_timestamp=1579624493239&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fes-abstract%2Fdownload%2Fes-abstract-1.17.4.tgz#e3aedf19706b20e7c2594c35fc0d57605a79e184"
@@ -1144,6 +1149,14 @@ rimraf@^2.6.3:
   dependencies:
     glob "^7.1.3"
 
+rss-parser@^3.7.5:
+  version "3.7.5"
+  resolved "https://registry.npm.taobao.org/rss-parser/download/rss-parser-3.7.5.tgz#f183148e81880f2e48166e09e9277b3c86de6de4"
+  integrity sha1-8YMUjoGIDy5IFm4J6Sd7PIbebeQ=
+  dependencies:
+    entities "^1.1.1"
+    xml2js "^0.4.19"
+
 run-async@^2.2.0:
   version "2.3.0"
   resolved "https://registry.npm.taobao.org/run-async/download/run-async-2.3.0.tgz#0371ab4ae0bdd720d4166d7dfda64ff7a445a6c0"
@@ -1162,6 +1175,11 @@ rxjs@^6.5.3:
   version "2.1.2"
   resolved "https://registry.npm.taobao.org/safer-buffer/download/safer-buffer-2.1.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsafer-buffer%2Fdownload%2Fsafer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
+
+sax@>=0.6.0:
+  version "1.2.4"
+  resolved "https://registry.npm.taobao.org/sax/download/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
+  integrity sha1-KBYjTiN4vdxOU1T6tcqold9xANk=
 
 semver@^5.5.0, semver@^5.7.0:
   version "5.7.1"
@@ -1424,6 +1442,19 @@ write@1.0.3:
   integrity sha1-CADhRSO5I6OH5BUSPIZWFqrg9cM=
   dependencies:
     mkdirp "^0.5.1"
+
+xml2js@^0.4.19:
+  version "0.4.23"
+  resolved "https://registry.npm.taobao.org/xml2js/download/xml2js-0.4.23.tgz#a0c69516752421eb2ac758ee4d4ccf58843eac66"
+  integrity sha1-oMaVFnUkIesqx1juTUzPWIQ+rGY=
+  dependencies:
+    sax ">=0.6.0"
+    xmlbuilder "~11.0.0"
+
+xmlbuilder@~11.0.0:
+  version "11.0.1"
+  resolved "https://registry.npm.taobao.org/xmlbuilder/download/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
+  integrity sha1-vpuuHIoEbnazESdyY0fQrXACvrM=
 
 y18n@^4.0.0:
   version "4.0.0"
