@@ -1,8 +1,8 @@
 {
 	"name": "nbsl-tool",
 	"displayName": "NBSL-Tools",
-	"description": "顺丰同城科技前端开发工具",
-	"version": "0.0.1",
+	"description": "NBSL前端开发工具",
+	"version": "0.0.2",
 	"publisher": "zhangweijie",
 	"author": "Zhang Weijie",
 	"icon": "images/logo.png",

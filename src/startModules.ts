@@ -10,11 +10,6 @@ export const quickPickItems = [
         description: 'all',
     },
     {
-        label: '完整启动',
-        detail: '启动所有模块',
-        description: 'all',
-    },
-    {
         label: '商圈',
         detail: '启动商圈规划模块',
         description: 'maps',

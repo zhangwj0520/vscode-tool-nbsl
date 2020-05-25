@@ -5,12 +5,15 @@ import { addShareButton, addRssButton } from './teamshare';
 import { ROOTPATH } from './utils';
 
 export function activate(context: vscode.ExtensionContext) {
-  if (/.*[\/\\]fe-area-platform[\/\\]?$/.test(ROOTPATH)) {
-      addLaunchButton(context);
-      addToolButton(context);
-    }else{
-      addLaunchButton(context,true);
-    }
+  // if (/.*[\/\\]fe-area-platform[\/\\]?$/.test(ROOTPATH)) {
+  //     addLaunchButton(context);
+  //     addToolButton(context);
+  //   }else{
+  //     addLaunchButton(context,true);
+  //   }
+
+  addLaunchButton(context);
+   addToolButton(context);
 
   addShareButton(context);
   addRssButton(context);
